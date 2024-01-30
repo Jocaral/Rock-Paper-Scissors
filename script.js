@@ -54,7 +54,7 @@ function game(){
       document.getElementById("youwin").innerHTML= `You are the Winner!<br> Final Score:</br> <br> Player ${scorePlayer} vs Computer ${scoreComputer}</br>`;
   }
     else if(scorePlayer<scoreComputer||scoreComputer>=3){
-      document.getElementById("youlose").innerHTML= `You lose. Computer is the winner! <br> Final Score:</br>  <br>Player ${scorePlayer} vs Computer ${scoreComputer}</br>`;
+      document.getElementById("youlose").innerHTML= `You lose. Computer is the winner! <br> Final Score:</br><br>Player ${scorePlayer} vs Computer ${scoreComputer}</br>`;
 }
   else {
   document.getElementById("tied").innerHTML= 'Tied game, play again!';
