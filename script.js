@@ -46,15 +46,15 @@ function game(){
       else if((playRound(playerSelection,computerSelection) === ("You Lose! Paper beats Rock"))||(playRound(playerSelection,computerSelection) === ("You Lose! Rock beats Scissors"))||(playRound(playerSelection,computerSelection) === ("You Lose! Scissors beats paper"))){
         scoreComputer++;
     }
-    console.log(`Player ${scorePlayer} vs Computer ${scoreComputer}`);
+      console.log(`Player ${scorePlayer} vs Computer ${scoreComputer}`);
     }
     
 
     if (scorePlayer>scoreComputer||scorePlayer>=3){
-      document.getElementById("youwin").innerHTML= 'You are the Winner!';
+      document.getElementById("youwin").innerHTML= `You are the Winner!<br> Final Score:</br> <br> Player ${scorePlayer} vs Computer ${scoreComputer}</br>`;
   }
     else if(scorePlayer<scoreComputer||scoreComputer>=3){
-      document.getElementById("youlose").innerHTML= 'You lose. Computer is the winner!';
+      document.getElementById("youlose").innerHTML= `You lose. Computer is the winner! <br> Final Score:</br>  <br>Player ${scorePlayer} vs Computer ${scoreComputer}</br>`;
 }
   else {
   document.getElementById("tied").innerHTML= 'Tied game, play again!';
