@@ -26,7 +26,7 @@ else if (playerSelection == 'paper' && computerSelection=='rock'){
  return "You Win! Paper beats rock";                       
 }
 else {    
-  return "Tied game, play again!";
+  return "It'\s a tie, play again!";
 } 
 
   }
@@ -57,7 +57,7 @@ function game(){
       document.getElementById("youlose").innerHTML= `You lose. Computer is the winner! <br> Final Score:</br><br>Player ${scorePlayer} vs Computer ${scoreComputer}</br>`;
 }
   else {
-  document.getElementById("tied").innerHTML= 'Tied game, play again!';
+  document.getElementById("tied").innerHTML= "It'\s a tie, play again!";
 }
 }
 
