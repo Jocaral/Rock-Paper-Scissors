@@ -36,7 +36,7 @@ function game(){
     let scorePlayer=0;
     let scoreComputer = 0;
     for (var i=0;i<5;i++){
-      var getPlayerSelection=(prompt('Choose Rock,Paper or Scissors?')).toLowerCase();
+      var getPlayerSelection=(prompt('Choose Rock, Paper or Scissors?')).toLowerCase();
       var playerSelection = getPlayerSelection;
       var computerSelection = getComputerChoice();
       console.log(playRound(playerSelection,computerSelection));
@@ -51,10 +51,13 @@ function game(){
     
 
     if (scorePlayer>scoreComputer||scorePlayer>=3){
-  console.log('You are the Winner!');
-}
+      document.getElementById("youwin").innerHTML= 'You are the Winner!';
+  }
     else if(scorePlayer<scoreComputer||scoreComputer>=3){
-   console.log('Computer is the winner!')
+      document.getElementById("youlose").innerHTML= 'You lose. Computer is the winner!';
+}
+  else {
+  document.getElementById("tied").innerHTML= 'Tied game, play again!';
 }
 }
 
