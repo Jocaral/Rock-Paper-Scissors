@@ -47,46 +47,25 @@ function game(){
         scoreComputer++;
     }
       console.log(`Player ${scorePlayer} vs Computer ${scoreComputer}`);
+      alert(`Score: Player ${scorePlayer} vs Computer ${scoreComputer}`);
     }
     
+    const reloadBtn = document.querySelector('.reload');
 
     if (scorePlayer>scoreComputer||scorePlayer>=3){
-      document.getElementById("youwin").innerHTML= `You are the Winner!<br> Final Score:</br> <br> Player ${scorePlayer} vs Computer ${scoreComputer}</br>`;
+      document.getElementById("youwin").innerHTML= `You are the Winner!<br> Final Score: <br> Player ${scorePlayer} vs Computer ${scoreComputer}`;
   }
     else if(scorePlayer<scoreComputer||scoreComputer>=3){
-      document.getElementById("youlose").innerHTML= `You lose. Computer is the winner! <br> Final Score:</br><br>Player ${scorePlayer} vs Computer ${scoreComputer}</br>`;
+      document.getElementById("youlose").innerHTML= `You lose. Computer is the winner! <br> Final Score: <br>Player ${scorePlayer} vs Computer ${scoreComputer}`;
 }
   else {
-  document.getElementById("tied").innerHTML= "It'\s a tie, play again!";
+  document.getElementById("tied").innerHTML= "It'\s a tie, <br> Play again!";
 }
-}
-
+        reloadBtn.innerText = 'Restart';
+        reloadBtn.style.display = 'flex'
+        reloadBtn.addEventListener('click',() => {
+            window.location.reload();
+        })
+      }
 game();
     
-/*
-function winner(){
-  let scorePlayer=0;
-  let scoreComputer=0;
-  if (console.log(playRound(playerSelection,computerSelection)=="You Win! Rock beats Scissors" || playRound()=="You Win! Scissors beats Paper" || playRound()==="You Win! Paper beats rock")){
-    scorePlayer+=1;
-  }
-  else {}
-  return scorePlayer;
-} 
-
-winner(game());
-
-*/
-/*
-playRound(playerSelection,computerSelection);
-
-*/
-
- 
-
- /*
- for (var i=0;i<5;i++)
- {
-   game();
- }
-*/

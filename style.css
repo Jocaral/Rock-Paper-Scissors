@@ -1,14 +1,19 @@
 * {
     background-color: black;
     font-style: helvetica;
+    align-items: center;
 }
 
+
+body{
+    text-align: center;
+}
 h1 {
     color: skyblue;
-    align-content: center;
     text-align: center;
     font-size: 50px;
-    padding: 40px;
+    padding: 60px;
+    justify-content: center;
 }
 
 #youwin, #youlose, #tied {
@@ -16,4 +21,25 @@ h1 {
     color: yellow;
     font-size: 40px;
     text-align: center;
+    margin-bottom: 30px;
 }
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+ /* Reload button style */
+ .reload {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: yellowgreen;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+   
+    }
