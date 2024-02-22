@@ -1,45 +1,61 @@
 * {
-    background-color: black;
-    font-style: helvetica;
-    align-items: center;
-}
-
-
-body{
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
+
 h1 {
-    color: skyblue;
+    color: white;
     text-align: center;
     font-size: 50px;
     padding: 60px;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.options {
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    font-style: helvetica;
 }
 
 #youwin, #youlose, #tied {
-    background-color: black;
-    color: yellow;
+    color: white;
     font-size: 40px;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.option-item {
+    margin: 2rem;
+    min-height: 100px;
+    min-width: 300px;
+    background: orange;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
     text-align: center;
+    color: white;
+    font-size: 40px;
+
 }
+
  /* Reload button style */
  .reload {
     margin-top: 2rem;
-    padding: 1rem;
-    background: yellowgreen;
+    min-height: 70px;
+    min-width: 200px;
+    background: orange;
     outline: none;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
     margin: auto;
+    color: white;
+    font-size: 30px;
    
     }
